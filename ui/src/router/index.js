@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { getToken } from '../utils/auth'
 
+import Layout from '@/components/Layout/index.vue'
+
 const routes = [
   {
     path: '/',
@@ -11,8 +13,24 @@ const routes = [
     component: () => import('@/views/login/index.vue')
   },
   {
-    path: '/home',
-    component: () => import('@/views/home/index.vue')
+    path: '',
+    component: Layout,
+    children: [
+      {
+        path: 'home',
+        component: () => import('@/views/home/index.vue')
+      }
+    ]
+  },
+  {
+    path: '/echarts',
+    component: Layout,
+    children: [
+      {
+        path: '',
+        component: import('@/views/echarts/index.vue')
+      }
+    ]
   }
 ]
 
