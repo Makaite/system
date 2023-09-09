@@ -14,7 +14,7 @@ const routes = [
   },
   {
     path: '',
-    component: Layout,
+    // component: Layout,
     children: [
       {
         path: 'home',
@@ -29,6 +29,16 @@ const routes = [
       {
         path: '',
         component: import('@/views/echarts/index.vue')
+      }
+    ]
+  },
+  {
+    path: '/test',
+    // component: Layout,
+    children: [
+      {
+        path: '',
+        component: import('@/views/test/index.vue')
       }
     ]
   }

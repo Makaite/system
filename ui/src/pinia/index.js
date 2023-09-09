@@ -24,6 +24,7 @@ export const userStore = defineStore('userStore', {
     login(data) {
       return new Promise((resolve, reject) => {
         loginApi(data).then((res) => {
+          console.log('打印看看res',res);
           if(res.code === 1000) {
             const { id, username, token } = res.data
             this.id = id

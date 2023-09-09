@@ -1,6 +1,6 @@
 <template>
   <div class="login">
-    <my-message :message="message"></my-message>
+    <!-- <my-message :message="message"></my-message> -->
     <div class="content">
       <div class="left">
         <left-content></left-content>
