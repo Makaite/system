@@ -14,12 +14,14 @@ import LoginInfo from './components/LoginInfo/index.vue'
 .top-content{
   width: 100%;
   height: 56px;
-  background-color: red;
+  border-bottom: 1px solid #EFF2F5;
+  // background-color: pink;
 
-  padding-left: 22px;
+  // padding-left: 22px;
 
   position: relative;
   
   display: flex;
+  align-items: center;
 }
 </style>

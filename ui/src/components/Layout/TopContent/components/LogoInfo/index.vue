@@ -19,7 +19,7 @@
 
   font-weight: 600;
 
-  // margin-left: 22px;
+  margin-left: 22px;
 
   .logo{
     width: 35px;
